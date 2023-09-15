@@ -1,0 +1,6 @@
+export enum CELL_TYPES {
+  TOKEN,
+  NUMBER,
+  PERCENT,
+  VALIDATOR,
+}

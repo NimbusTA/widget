@@ -1,0 +1,18 @@
+import { useTokenToWallet } from '@lido-sdk/react';
+import { Tooltip } from '@lidofinance/lido-ui';
+
+import { TokenToWalletStyle } from './tokenToWalletStyles';
+import { TokenToWalletComponent } from './types';
+
+export const TokenToWallet: TokenToWalletComponent = (props) => {
+  const { address, ...rest } = props;
+  const { addToken } = useTokenToWallet(address);
+
+  if (!addToken) return null;
+
+  return (
+    <Tooltip placement="bottomLeft" title="Add tokens to wallet">
+      <TokenToWalletStyle tabIndex={-1} onClick={addToken} {...rest} />
+    </Tooltip>
+  );
+};
