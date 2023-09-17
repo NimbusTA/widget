@@ -38,12 +38,12 @@ const StyledTokenImage = styled(Image).attrs({
   border-radius: 50%;
 `;
 
-export const STDOT: FC<IIcon> = () => (
-  <StyledTokenImage src={nDOTIcon} alt="STDOT token" />
+export const nDOT: FC<IIcon> = () => (
+  <StyledTokenImage src={nDOTIcon} alt="nDOT token" />
 );
 
-export const STKSM: FC<IIcon> = () => (
-  <StyledTokenImage src={nKSMIcon} alt="STKSM token" />
+export const nKSM: FC<IIcon> = () => (
+  <StyledTokenImage src={nKSMIcon} alt="nKSM token" />
 );
 
 export const GLINT: FC<IIcon> = () => (
